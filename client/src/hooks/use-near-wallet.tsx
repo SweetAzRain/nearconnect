@@ -150,7 +150,7 @@ export function NearWalletProvider({ children }: NearWalletProviderProps) {
       addActivityLog('Opening wallet selector...', 'info');
       
       // Show wallet selector modal
-      modal.show();
+      modal.open();
       
     } catch (error) {
       console.error('Connection error:', error);
@@ -305,3 +305,4 @@ export function useNearWallet() {
   }
   return context;
 }
+
